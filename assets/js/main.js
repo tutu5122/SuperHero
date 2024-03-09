@@ -34,9 +34,9 @@ $(function() {
                         );
                         
                         var dataPoints = [];
-                        for (const [poder, valor] of Object.entries(data.powerstats)) {
+                        for (const [estadisticas, valor] of Object.entries(data.powerstats)) {
                             if(valor !== "null"){
-                                dataPoints.push({ y: +valor || 0, label: poder });
+                                dataPoints.push({ y: +valor || 0, label: estadisticas });
                             }                           
                         }
 
